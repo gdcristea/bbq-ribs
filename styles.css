@@ -85,23 +85,7 @@ strong {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
 }
-
-/* .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.7);
-} */
-
-/* .hero .container * {
-    position: relative; 
-    z-index: 10;
-} */
 
 /* Register */
 .register {
