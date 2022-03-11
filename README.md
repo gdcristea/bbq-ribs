@@ -15,7 +15,7 @@ View the optimal layout depending on their device's screen size
 
 ### Screenshot
 
-![](screenshot/mobile.png)
+![](screenshot/mobile1.png)
 ![](screenshot/desktop.png)
 
 ### Links
