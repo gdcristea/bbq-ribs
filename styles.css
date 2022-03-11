@@ -1,0 +1,209 @@
+:root {
+    --highlight: linear-gradient(to left, #FF713B,  #FFA51D);
+  }
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    color: #5A5A5A;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3.6rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 8rem 0;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.1rem;
+    color: #404040;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.highlight {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #F18119;
+}
+
+.top-paragraph {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    border-top: 6px solid;
+    border-image: var(--highlight) 1;
+    max-width: 18rem;
+    margin: 0 auto;
+    padding-top: 4px;
+}
+
+.bottom-paragraph {
+    font-size: 2.1rem;
+}
+
+/**** Layout**** 
+****************/
+
+/* Hero */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero {
+    padding-bottom: 3.5rem;
+    background-image: url("img/jon-tyson-kctt4tL1dkE-unsplash.jpg");
+    background-color: #404040; /*in case the image doesn't load*/    
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/* .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+} */
+
+/* .hero .container * {
+    position: relative; 
+    z-index: 10;
+} */
+
+/* Register */
+.register {
+    padding: 3.5rem 0;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 75%;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+form > * {
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+input {
+    width: 100%;
+    text-align: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 1rem 0;
+    border: 1px solid #818181;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+input:focus {
+    transform: scale(1.15);
+}
+
+.btn {
+    color: #fff;
+    background: var(--highlight);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.75;
+    transform: scale(1.15);
+}
+
+.confidentiality {
+    color: #989898;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Desktop version  */
+
+@media (min-width: 800px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero {
+        min-height: 100vh;
+        width: 60%;
+        padding-bottom: 0;
+    }
+
+    .register {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 5.6rem;
+        margin-bottom: 1.5rem;
+        margin-top: 30rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .bottom-paragraph {
+        font-size: 2.8rem;
+    }
+
+    .bigger-size {
+        font-size: 1.8rem;
+    }
+
+}
